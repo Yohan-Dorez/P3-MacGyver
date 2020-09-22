@@ -3,9 +3,9 @@ pygame.init()
 
 # game window
 pygame.display.set_caption("MacGyver Escape")
-screen = pygame.display.set_mode((300, 300))
+screen = pygame.display.set_mode((600, 600))
 
-background = pygame.image.load('resources/background.png')
+background = pygame.image.load('assets/background.png')
 
 running = True
 
@@ -20,7 +20,7 @@ while running:
 
     for event in pygame.event.get():
         # close window
-        if event.type == pygame.quit:
+        if event.type == pygame.QUIT:
             running = False
             pygame.quit()
             print("game off")
