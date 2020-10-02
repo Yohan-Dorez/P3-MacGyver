@@ -1,5 +1,5 @@
 from objects.maze import Maze
-from objects.macgyver import Player
+from objects.player import Player
 
 
 class Game:
