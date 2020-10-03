@@ -12,7 +12,6 @@ class Game:
         self.all_players.add(self.player)
         self.maze = Maze()
         # walls group
-        self.wall = Wall(self)
         self.all_walls = pygame.sprite.Group()
         self.spawn_wall()
 
@@ -20,5 +19,5 @@ class Game:
         return pygame.sprite.spritecollide(sprite, group, False, pygame.sprite.collide_mask)
 
     def spawn_wall(self):
-        wall = Wall(self)
+        wall = Wall()
         self.all_walls.add(wall)

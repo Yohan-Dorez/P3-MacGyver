@@ -12,14 +12,13 @@ screen = pygame.display.set_mode((600, 600))
 # load the game
 game = Game()
 
-running = True
-
 # loop running
+running = True
 while running:
 
     # background, wall and player
     screen.blit(game.maze.background, (0, 0))
-    game.wall.draw_wall(screen, game.wall.image)
+    # game.wall.draw_wall(screen, game.wall.image)
     screen.blit(game.player.image, game.player.rect)
 
     # update screen
