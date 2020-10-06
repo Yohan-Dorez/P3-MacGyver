@@ -1,8 +1,7 @@
 import pygame
-from objects.maze import Maze
 
 
-class Wall(Maze, pygame.sprite.Sprite):
+class Wall(pygame.sprite.Sprite):
 
     def __init__(self):
         super().__init__()

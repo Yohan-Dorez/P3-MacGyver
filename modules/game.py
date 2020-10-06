@@ -1,7 +1,6 @@
 import pygame
-from objects.maze import Maze
-from objects.player import Player
-from objects.wall import Wall
+from modules.player import Player
+from modules.wall import Wall
 
 
 class Game:
@@ -10,7 +9,6 @@ class Game:
         self.all_players = pygame.sprite.Group()
         self.player = Player(self)
         self.all_players.add(self.player)
-        self.maze = Maze()
         # walls group
         self.all_walls = pygame.sprite.Group()
         self.spawn_wall()

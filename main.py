@@ -2,12 +2,13 @@
 # encoding: utf-8
 
 import pygame
-from objects.game import Game
+from modules.game import Game
 pygame.init()
 
 # game window
 pygame.display.set_caption("MacGyver Escape")
 screen = pygame.display.set_mode((600, 600))
+background = pygame.image.load('assets/background.png')
 
 # load the game
 game = Game()
@@ -17,7 +18,7 @@ running = True
 while running:
 
     # background, wall and player
-    screen.blit(game.maze.background, (0, 0))
+    screen.blit(background, (0, 0))
     # game.wall.draw_wall(screen, game.wall.image)
     screen.blit(game.player.image, game.player.rect)
 
