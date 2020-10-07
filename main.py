@@ -7,6 +7,7 @@ pygame.init()
 
 # game window
 pygame.display.set_caption("MacGyver Escape")
+pygame.display.set_icon(pygame.image.load('assets/MacGyver.png'))
 screen = pygame.display.set_mode((600, 600))
 background = pygame.image.load('assets/background.png')
 
@@ -19,7 +20,8 @@ while running:
 
     # background, wall and player
     screen.blit(background, (0, 0))
-    # game.wall.draw_wall(screen, game.wall.image)
+    game.wall.draw_wall(screen, game.wall.image)
+    screen.blit(game.guard.image, game.guard.rect)
     screen.blit(game.player.image, game.player.rect)
 
     # update screen
