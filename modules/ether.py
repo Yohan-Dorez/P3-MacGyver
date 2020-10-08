@@ -1,7 +1,9 @@
 import pygame
+from modules.level import Level
 
 
-class Ether:
+class Ether(Level):
 
     def __init__(self):
-        self.image = pygame.image.load('assets/ether.pgn')
+        super().__init__()
+        self.image = pygame.image.load('assets/ether.png')
