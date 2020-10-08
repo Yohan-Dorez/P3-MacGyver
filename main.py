@@ -22,6 +22,7 @@ while running:
     screen.blit(background, (0, 0))
     game.wall.draw_wall(screen, game.wall.image)
     screen.blit(game.guard.image, game.guard.rect)
+    screen.blit(game.ether.image, game.ether.rect)
     screen.blit(game.player.image, game.player.rect)
 
     # update screen
