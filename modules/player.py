@@ -9,8 +9,6 @@ class Player:
         self.speed = 40
         self.image = pygame.image.load('assets/MacGyver.png')
         self.rect = self.image.get_rect()
-        self.rect.x = 520
-        self.rect.y = 480
 
     def move_right(self):
         self.rect.x += self.speed
