@@ -13,13 +13,13 @@ screen = pygame.display.set_mode((600, 600))
 # load the game
 game = Game()
 
+
 # loop running
 running = True
 while running:
 
     screen.blit(game.guard.image, game.guard.rect)
     screen.blit(game.ether.image, game.ether.rect)
-
     # update screen
     pygame.display.flip()
 

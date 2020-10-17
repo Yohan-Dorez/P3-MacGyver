@@ -1,4 +1,4 @@
-class Map:
+class Maze:
 
     def getMap(self):
         maze = []
@@ -8,7 +8,7 @@ class Map:
                 line = f.readline()
                 if line:
                     line = line.replace("\n", "")
-                    map.insert(len(self.maze), list(line))
+                    maze.insert(len(self.maze), list(line))
 
         for x in range(0, 15):
             for y in range(0, 15):
