@@ -20,6 +20,12 @@ while running:
 
     screen.blit(game.guard.image, game.guard.rect)
     screen.blit(game.ether.image, game.ether.rect)
+    for x in range(0, 15):
+        for y in range(0, 15):
+            objectToDisplay = my_level[x][y]
+            if objectToDisplay == "x":
+                pygame.rect.draw(Wall)
+
     # update screen
     pygame.display.flip()
 

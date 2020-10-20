@@ -1,17 +1,11 @@
-class Maze:
+class GetMap:
 
-    def getMap(self):
-        map = []
+    def __init__(self):
+        my_level = []
         with open("level.txt") as f:
             line = True
             while line:
                 line = f.readline()
                 if line:
                     line = line.replace("\n", "")
-                    map.insert(len(self.map), list(line))
-
-        for x in range(0, 15):
-            for y in range(0, 15):
-                objectToDisplay = map[x][y]
-                if objectToDisplay == "x":
-                    pygame.rect.draw(Wall)
+                    my_level.insert(len(self.my_level), list(line))
